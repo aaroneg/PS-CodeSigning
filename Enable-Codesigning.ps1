@@ -4,7 +4,6 @@ $CertServerString="server1\EnterpriseRoot"
 #Not User Configurable
 $mydocs=[environment]::getfolderpath("mydocuments")
 $wps="$mydocs\WindowsPowerShell"
-. $PSScriptRoot\..\CommonHelperFunctions.ps1
 $me=Get-AdUser $env:USERNAME
 $sam=$me.samaccountname[0]
 function RequestCert {
@@ -38,8 +37,8 @@ if (!(Test-Path "$wps\signisescript.ps1")) {
     Write-Output "Adding Script signing add-on to your powershell profile and enabling in this session"
     ". $wps\signisescript.ps1"|Out-File -Append $wps\Microsoft.PowerShellISE_profile.ps1
     . $wps\signisescript.ps1
-    '$psISE.CurrentPowerShellTab.AddOnsMenu.submenus.Add(ìSign Scriptî,{Sign-ISEScript},$null) | Out-Null'|Out-File -Append $wps\Microsoft.PowerShellISE_profile.ps1
-    $psISE.CurrentPowerShellTab.AddOnsMenu.submenus.Add(ìSign Scriptî,{Sign-ISEScript},$null) | Out-Null
+    '$psISE.CurrentPowerShellTab.AddOnsMenu.submenus.Add(‚ÄúSign Script‚Äù,{Sign-ISEScript},$null) | Out-Null'|Out-File -Append $wps\Microsoft.PowerShellISE_profile.ps1
+    $psISE.CurrentPowerShellTab.AddOnsMenu.submenus.Add(‚ÄúSign Script‚Äù,{Sign-ISEScript},$null) | Out-Null
 }
 
 Write-Output "Checking for code signing cert.."
