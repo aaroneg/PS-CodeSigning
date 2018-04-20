@@ -4,7 +4,7 @@ Script to get a code signing cert from your AD environment's CA and add a menu i
 Also contains an ISE add-on to actually sign the script once you have a cert.
 
 ## Pre-requisites:
-* Ability to enroll in a code signing certificate on the enterprise CA you configure
+* Ability to enroll a code signing certificate on the enterprise CA you configure.
 
 ## Additional Sources:
 ```
