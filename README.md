@@ -12,6 +12,6 @@ Author: Jeffery Hicks
     http://jdhitsolutions.com/blog
     http://twitter.com/JeffHicks
     http://www.ScriptingGeek.com
-    https://github.com/jdhitsolutions
+    https://github.com/jdhitsolutions/ISEScriptingGeek/blob/master/Sign-ISEScript.ps1
  Date: 8/4/2011
  ```
