@@ -12,5 +12,6 @@ Author: Jeffery Hicks
     http://jdhitsolutions.com/blog
     http://twitter.com/JeffHicks
     http://www.ScriptingGeek.com
+    https://github.com/jdhitsolutions
  Date: 8/4/2011
  ```
